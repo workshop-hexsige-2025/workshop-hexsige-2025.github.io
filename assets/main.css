@@ -42,6 +42,59 @@ body{
 }
 
 
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.keynote {
+    font-size: 1.2em;
+     text-align: center;
+     line-height: 0.7;
+}
+
+.speakers {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 100px;
+    line-height: 0.7;
+    padding: 10px; /* Optional: add padding to the container */
+}
+
+.speaker {
+   font-size: 1.2em;
+    text-align: center;
+    justify-content: center;
+}
+
+.small-text {
+    font-size: 0.6em; /* Adjust size as needed */
+    color: #555; /* Optional: Make text slightly lighter */
+    text-align: center;
+    line-height: 0.01;
+}
+
+.small-br {
+    margin: -4px 0; /* Eliminate spacing between breaks */
+    padding: 0;
+}
+
+
+.speaker {
+    text-align: center;
+    justify-content: center;
+}
+
+.img_2 {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 10px;
+}
 
 
 a{color: #b8860b; text-decoration:none;}
