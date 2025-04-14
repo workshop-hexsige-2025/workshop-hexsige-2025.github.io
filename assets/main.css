@@ -35,46 +35,50 @@ body{
     color: #505050; 
     text-align:left;
     font-family:'Roboto slab',serif;
-    font-size:1rem;
+    font-size:1.6em;
     line-height:1.5rem;
-    margin: 60px auto;
-    width: 1000px;
+    margin: auto auto;
+    width: 1200px;
+    zoom: 1.2; /* Increases the zoom level by 20% */
+    /* Alternative method for better compatibility */
+    transform: scale(1.2);
+    transform-origin: top center; /* Ensures scaling happens from the top */
 }
 
 
 .container {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 20px;
+    align-items: space-between;
+    gap: 40px;
+    width: 100%;
 }
 
 .keynote {
     font-size: 1.2em;
-     text-align: center;
-     line-height: 0.7;
+    text-align: center;
+    line-height: 0.7;
 }
 
 .speakers {
     display: flex;
-    justify-content: center;
-    text-align: center;
-    gap: 100px;
-    line-height: 0.7;
-    padding: 10px; /* Optional: add padding to the container */
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0px;
+    max-width: 2000px;
 }
 
 .speaker {
-   font-size: 1.2em;
-    text-align: center;
-    justify-content: center;
+    flex: 1 1 200px;
+    max-width: 600px;
+    text-align: space-betwee;
+    font-size: 1.2em;
 }
 
 .small-text {
-    font-size: 0.6em; /* Adjust size as needed */
-    color: #555; /* Optional: Make text slightly lighter */
-    text-align: center;
-    line-height: 0.01;
+    font-size: 0.7em;
+    color: #555;
+    line-height: 1.1;
 }
 
 .small-br {
@@ -85,7 +89,7 @@ body{
 
 .speaker {
     text-align: center;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .img_2 {
@@ -105,16 +109,17 @@ a:focus {
     outline-offset: 4px;
 }
 a:hover{color: #b2132e;}
+
 a:active{color: #e82945;}
 h1,h2,h3,h4{clear:left; color: #813c54; margin:1.5em 0em 1em 0em; font-family:'Roboto Slab',serif; text-shadow: 1px 1px 2px #d0d0d0;}
 h1{font-size:2.67rem;}
 h2{font-size:2.00rem;}
 h3{font-size:1.67rem;}
 h4{font-size:1.33rem;}
-p{list-style:none; margin:24px auto 24px auto; padding:0px; width:900px; text-align:justify;}
-li a, p a {text-decoration:underline; text-decoration-color:#b8860b;}
-ul{list-style:none; margin:24px auto 24px auto; padding:0px; width:800px; text-align:left;}
-ul li{list-style:disc; margin:0px auto 0px auto; padding:0px; text-align:left;}
+p{list-style:none; margin:24px auto 24px auto; padding:0px; width:1100px; text-align:justify;  line-height: 1.5; }
+li a, p a {text-decoration:underline; text-decoration-color:#b8860b;  line-height: 1.2;}
+ul{list-style:none; margin:24px auto 24px auto; padding:0px; width:1000px; text-align:left;}
+ul li{list-style:disc; margin:0px auto 0px auto; padding:0px; text-align:left;  line-height: 1.5;}
 i,em{font-style:italic;}
 b,strong{font-weight:bold;}
 sup{
@@ -128,7 +133,7 @@ sub{
     line-height: 0;
 }
 table{
-    width: 1000px;
+    width: 1200px;
     margin: 12px auto 24px auto;
     float: center;
     /* UNCOMMENT THIS FOR DEBUGGING THE ALIGNMENT */
@@ -142,36 +147,89 @@ th,td{
 
 /* Website Banner */
 .banner {position: relative; font-family:'Roboto',sans-serif;}
-.top-left {font-size:4.00em; color: #505050; background: #fafafa; text-align: center; width: 1000px; height: 375px; position: absolute; padding: 5px 0 0 0; top: 0px; line-height: 1.2em; background: rgba(250, 250, 250, 0.05);}
-.bottom-right {font-size:1.95em; color: #fafafa; line-height: 1.00em; width: auto; height: 100px; padding: 0px 10px 0px 0px; text-align: right; position: absolute; bottom: 0px; right: 0px; text-shadow: 0px 0px 6px #000000;}
-.bottom-right_2 {font-size:1.5em; color: #fafafa; line-height: 1.00em; width: auto; height: 60px; padding: 0px 10px 0px 0px; text-align: right; position: absolute; bottom: 0px; right: 0px; text-shadow: 0px 0px 6px #000000;}
+.top-left {font-size:4.00em; color: #505050; background: #fafafa; text-align: center; width: 1200px; height: 375px; position: absolute; padding: 5px 0 0 0; top: 0px; line-height: 1.0em; background: rgba(250, 250, 250, 0.05);}
+.bottom-right {font-size:1.95em; color: #fafafa; line-height: 1.00em; width: auto; height: 110px; padding: 0px 10px 0px 0px; text-align: right; position: absolute; bottom: 0px; right: 0px; text-shadow: 0px 0px 6px #000000;}
+.bottom-right_2 {font-size:1.5em; color: #fafafa; line-height: 1.00em; width: auto; height: 70px; padding: 0px 10px 0px 0px; text-align: right; position: absolute; bottom: 0px; right: 0px; text-shadow: 0px 0px 6px #000000;}
 
 /* Conference Title Logo */
 .title1{color:  #fafafa; text-shadow: 1px 1px 3px #c0c0c0; font-size:0.80em;} 
 .title2{color:  #fafafa; text-shadow: 1px 1px 3px #c0c0c0; font-size:1.00em;}
 .year{color: #505050; font-size:0.50em; font-weight: lighter;}
 
-/* Navigation Links (Home, Registration, etc) */
-table.navigation{width:1000px; border-collapse: collapse;}
-td.navigation{font-size:1.67em; white-space:nowrap; width:25%; text-align:center; vertical-align:middle;   padding:20px 60px; /* Add padding to make the clickable area larger */
-    cursor: pointer; /}
-
-td.navigation a {
-    display: block; /* Fills the entire cell */
-    width: 100%; /* Expand horizontally to fill the cell */
-    height: 100%; /* Match cell height */
-    text-decoration: none; /* Removes underline */
-    padding: 10px; /* Adds padding inside the link */
-    background-color: transparent; /* Keep link background transparent */
+/* Navigation Table */
+table.navigation {
+    width: 1200px;
+    border-collapse: collapse;
 }
 
+/* Main Navigation Items */
+td.navigation {
+    font-size: 1.67em;
+    white-space: nowrap;
+    width: 10%;
+    text-align: center;
+    vertical-align: middle;
+    padding: 20px 40px;
+    cursor: pointer;
+    position: relative; /* Needed for submenu positioning */
+}
+
+/* Navigation Links */
+td.navigation a {
+    display: block; /* Fills the entire cell */
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    padding: 10px;
+    background-color: transparent;
+}
+
+/* Hover Effect */
 td.navigation a:hover {
     background-color: #e0e0e0; /* Light gray on hover */
-    color: #000000; /* Keep text color consistent */
+    color: #813c54;
+}
+
+/* Submenu (Hidden by Default) */
+.submenu {
+    display: none;
+    position: absolute;
+    top: 80%; /* Position below the parent */
+    left: 40%;
+    background-color: white;
+    width: auto;
+    border: 1px solid #ccc;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+/* Submenu Links */
+.submenu a {
+    display: block;
+    padding: 2px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 0.7em;
+    background-color: transparent;
+    color: #b8860b;
+}
+
+/* Submenu Hover Effect */
+.submenu a:hover {
+    background-color: #e0e0e0;
+}
+
+/* Show Submenu on Hover */
+td.navigation:hover .submenu {
+    display: block;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 /* Sponsor Images */
-table.sponsors{width:800px;}
+table.sponsors{width:1000px;}
 td.sponsor{white-space:nowrap; width:33%; text-align:center; vertical-align:middle; padding:0px 0px 0px 0px;}
 td.sponsor img{width: 100%}
 
@@ -191,7 +249,7 @@ iframe.directions{display:block; margin:1em auto 2em auto; width:800px; height:4
 img.center{display:block; width:67%; margin:1em auto 2em auto;}
 
 /* Flyer Images */
-table.flyers{width:800px;}
+table.flyers{width:1000px;}
 td.flyer{white-space:nowrap; width:50%; text-align:center; vertical-align:middle; padding:0px 0px 0px 0px;}
 td.sponsor img{width: 100%}
 
@@ -206,4 +264,41 @@ footer{font-size:0.875em; margin-top:12em; text-align:center;}
     td.navigation{font-size:1.5em; padding:20px 20px 0px 0px;}
     table.footer{font-size:0.33em;}
 }
+
+
+
+.form-container {
+            background: transparent;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 1200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, textarea {
+            width: 1200px;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #813c54;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #b8860b;;
+        }
 
