@@ -1,0 +1,304 @@
+/* main.css */
+
+/* These are the colors and fonts used throughout the webpage.
+ * I've listed them here so that a user may easily
+ * do a search-and-replace for these to change the site theme.
+ *   'Roboto',sans-serif; Font for the title text
+ *   'Roboto-Slab',serif; Font for the body text 
+ *   #fafafa; Background color of the site
+ *   #505050; Foreground (text) color of the site
+ *   #52739e; Navy, "Template" in the logo, current page in navigation, special titles in the Program
+ *   #b2132e; Reddish, "Conference" in the logo, hover color for links
+ *   #813c54; Heading color, titles in the Program
+ *   #b8860b; Dark Goldenrod, color for links
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap');
+
+/*@import url('https://fonts.googleapis.com/css?family=Roboto%7CRoboto+Slab');*/
+
+*{
+    border:0;
+    font:inherit;
+    font-size:1em;
+    margin:0;
+    padding:0;
+    vertical-align:baseline;
+}
+
+
+
+body{
+    background-color: #fafafa;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #505050; 
+    text-align:left;
+    font-family:'Roboto slab',serif;
+    font-size:1.6em;
+    line-height:1.5rem;
+    margin: auto auto;
+    width: 1200px;
+    zoom: 1.2; /* Increases the zoom level by 20% */
+    /* Alternative method for better compatibility */
+    transform: scale(1.2);
+    transform-origin: top center; /* Ensures scaling happens from the top */
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    gap: 40px;
+    width: 100%;
+}
+
+.keynote {
+    font-size: 1.2em;
+    text-align: center;
+    line-height: 0.7;
+}
+
+.speakers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0px;
+    max-width: 2000px;
+}
+
+.speaker {
+    flex: 1 1 200px;
+    max-width: 600px;
+    text-align: space-betwee;
+    font-size: 1.2em;
+}
+
+.small-text {
+    font-size: 0.7em;
+    color: #555;
+    line-height: 1.1;
+}
+
+.small-br {
+    margin: -4px 0; /* Eliminate spacing between breaks */
+    padding: 0;
+}
+
+
+.speaker {
+    text-align: center;
+    justify-content: space-around;
+}
+
+.img_2 {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 10px;
+}
+
+
+a{color: #b8860b; text-decoration:none;}
+a.current{color: #52739e;}
+a.current:hover{color: #e82945;}
+a:focus {
+    outline: 2px solid #52739e;
+    outline-offset: 4px;
+}
+a:hover{color: #b2132e;}
+
+a:active{color: #e82945;}
+h1,h2,h3,h4{clear:left; color: #813c54; margin:1.5em 0em 1em 0em; font-family:'Roboto Slab',serif; text-shadow: 1px 1px 2px #d0d0d0;}
+h1{font-size:2.67rem;}
+h2{font-size:2.00rem;}
+h3{font-size:1.67rem;}
+h4{font-size:1.33rem;}
+p{list-style:none; margin:24px auto 24px auto; padding:0px; width:1100px; text-align:justify;  line-height: 1.5; }
+li a, p a {text-decoration:underline; text-decoration-color:#b8860b;  line-height: 1.2;}
+ul{list-style:none; margin:24px auto 24px auto; padding:0px; width:1000px; text-align:left;}
+ul li{list-style:disc; margin:0px auto 0px auto; padding:0px; text-align:left;  line-height: 1.5;}
+i,em{font-style:italic;}
+b,strong{font-weight:bold;}
+sup{
+    vertical-align: super;
+    font-size: 0.8em;
+    line-height: 0;
+}
+sub{
+    vertical-align: sub;
+    font-size: 0.8em;
+    line-height: 0;
+}
+table{
+    width: 1200px;
+    margin: 12px auto 24px auto;
+    float: center;
+    /* UNCOMMENT THIS FOR DEBUGGING THE ALIGNMENT */
+    /*border: 1px solid black;*/
+}
+th,td{
+    text-align: left;
+    /* UNCOMMENT THIS FOR DEBUGGING THE ALIGNMENT */
+    /*border: 1px solid black;*/
+}
+
+/* Website Banner */
+.banner {position: relative; font-family:'Roboto',sans-serif;}
+.top-left {font-size:4.00em; color: #505050; background: #fafafa; text-align: center; width: 1200px; height: 375px; position: absolute; padding: 5px 0 0 0; top: 0px; line-height: 1.0em; background: rgba(250, 250, 250, 0.05);}
+.bottom-right {font-size:1.95em; color: #fafafa; line-height: 1.00em; width: auto; height: 110px; padding: 0px 10px 0px 0px; text-align: right; position: absolute; bottom: 0px; right: 0px; text-shadow: 0px 0px 6px #000000;}
+.bottom-right_2 {font-size:1.5em; color: #fafafa; line-height: 1.00em; width: auto; height: 70px; padding: 0px 10px 0px 0px; text-align: right; position: absolute; bottom: 0px; right: 0px; text-shadow: 0px 0px 6px #000000;}
+
+/* Conference Title Logo */
+.title1{color:  #fafafa; text-shadow: 1px 1px 3px #c0c0c0; font-size:0.80em;} 
+.title2{color:  #fafafa; text-shadow: 1px 1px 3px #c0c0c0; font-size:1.00em;}
+.year{color: #505050; font-size:0.50em; font-weight: lighter;}
+
+/* Navigation Table */
+table.navigation {
+    width: 1200px;
+    border-collapse: collapse;
+}
+
+/* Main Navigation Items */
+td.navigation {
+    font-size: 1.67em;
+    white-space: nowrap;
+    width: 10%;
+    text-align: center;
+    vertical-align: middle;
+    padding: 20px 40px;
+    cursor: pointer;
+    position: relative; /* Needed for submenu positioning */
+}
+
+/* Navigation Links */
+td.navigation a {
+    display: block; /* Fills the entire cell */
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    padding: 10px;
+    background-color: transparent;
+}
+
+/* Hover Effect */
+td.navigation a:hover {
+    background-color: #e0e0e0; /* Light gray on hover */
+    color: #813c54;
+}
+
+/* Submenu (Hidden by Default) */
+.submenu {
+    display: none;
+    position: absolute;
+    top: 80%; /* Position below the parent */
+    left: 40%;
+    background-color: white;
+    width: auto;
+    border: 1px solid #ccc;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+/* Submenu Links */
+.submenu a {
+    display: block;
+    padding: 2px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 0.7em;
+    background-color: transparent;
+    color: #b8860b;
+}
+
+/* Submenu Hover Effect */
+.submenu a:hover {
+    background-color: #e0e0e0;
+}
+
+/* Show Submenu on Hover */
+td.navigation:hover .submenu {
+    display: block;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Sponsor Images */
+table.sponsors{width:1000px;}
+td.sponsor{white-space:nowrap; width:33%; text-align:center; vertical-align:middle; padding:0px 0px 0px 0px;}
+td.sponsor img{width: 100%}
+
+/* The Table on the Program Page */
+td.room{padding: 4px 12px 4px 4px; width: 90%; vertical-align:bottom; font-size:1.67em; color: #52739e; height:32px;}
+td.date{white-space:nowrap; width:130px; text-align:right; vertical-align:top; padding:4px 16px 0px 0px;}
+td.title{padding: 4px 12px 4px 4px; width: 90%; vertical-align:top; font-size:1.5em; color: #813c54; height:32px; font-family:'Roboto Slab',serif; text-shadow: 1px 1px 2px #d0d0d0; }
+td.title-special{padding: 4px 12px 4px 4px; width: 90%; vertical-align:top; font-size:1.67em; color: #52739e; height:32px; font-family:'Roboto Slab',serif; text-shadow: 1px 1px 2px #d0d0d0;}
+td.speaker{padding: 4px 12px 4px 4px; font-style: italic; font-size:1em; max-height:999999px}
+td.abstract{padding: 4px 12px 12px 4px; font-size:1em; max-height:999999px}
+td.abstract img{display: block; margin: 4px auto 8px auto}
+table.plenary{padding-top: 8px; background: #ffffff;}
+
+/* Registration and Directions iframes and Images */
+iframe.registration{display:block; margin:1em auto 2em auto; width:700px; height:1400px; border:none;}
+iframe.directions{display:block; margin:1em auto 2em auto; width:800px; height:400px; border:none;}
+img.center{display:block; width:67%; margin:1em auto 2em auto;}
+
+/* Flyer Images */
+table.flyers{width:1000px;}
+td.flyer{white-space:nowrap; width:50%; text-align:center; vertical-align:middle; padding:0px 0px 0px 0px;}
+td.sponsor img{width: 100%}
+
+footer{font-size:0.875em; margin-top:12em; text-align:center;}
+
+/* My hacky way of making the site mobile-friendly */
+@media only screen and (max-width: 1100px) {
+    h2{font-size:3.00em;}
+    p{font-size:1.5em; line-height:1.5em;}
+    th,td,tr{font-size:1.5em; line-height:1.5em;}
+    td.date{font-size:1em; padding-top:0.5em;}
+    td.navigation{font-size:1.5em; padding:20px 20px 0px 0px;}
+    table.footer{font-size:0.33em;}
+}
+
+
+
+.form-container {
+            background: transparent;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 1200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, textarea {
+            width: 1200px;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #813c54;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #b8860b;;
+        }
+
