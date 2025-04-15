@@ -210,54 +210,73 @@ th, td {
     font-weight: lighter;
 }
 
-/* Navigation Table */
-table.navigation {
-    width: 90%;
-    border-collapse: collapse;
+
+/* NEW Navigation Style Using Flexbox */
+.navigation {
+    display: flex;
+    flex-wrap: wrap; /* allows wrapping to new row */
+    justify-content: center;
+    align-items: center;
+    gap: 1.0em;
+    padding: 1.0em;
+    font-size: 1.5em;
+    background-color: #f8f8f8;
+    border-radius: 0px;
+    max-width: 100%;
 }
-td.navigation {
-    font-size: 1.67em;
-    white-space: nowrap;
-    width: 10%;
-    text-align: center;
-    vertical-align: middle;
-    padding: 20px 40px;
-    cursor: pointer;
+
+.navigation > div, .navigation > a {
     position: relative;
+    padding: 0.5em 0.2em;
+    background-color: #e6e6e6;
+    border-radius: 0px;
+    text-decoration: none;
+    color: #b8860b;
+     background-color: transparent;
+    transition: background 0.3s;
+    white-space: nowrap;
+    cursor: pointer;
 }
-td.navigation a {
-    display: block;
-    width: 100%;
-    height: 100%;
-    padding: 10px;
-}
-td.navigation a:hover {
-    background-color: #e0e0e0;
+
+.navigation > a:hover,
+.navigation > div:hover {
+    background-color: #ccc;
     color: #813c54;
 }
+
+
 .submenu {
     display: none;
     position: absolute;
-    top: 80%;
-    left: 40%;
+    top: 100%;
+    left: 0;
+    min-width: 150px;
     background-color: white;
     border: 1px solid #ccc;
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
     z-index: 1000;
+    flex-direction: column;
 }
+
 .submenu a {
     display: block;
-    padding: 2px;
-    text-align: center;
-    font-size: 0.7em;
+    padding: 0.5em;
+    font-size: 0.85em;
     color: #b8860b;
+    text-align: left;
+    text-decoration: none;
+    background-color: white;
 }
+
 .submenu a:hover {
-    background-color: #e0e0e0;
+    background-color: #f0f0f0;
 }
-td.navigation:hover .submenu {
-    display: block;
+
+/* Show submenu on hover */
+.navigation > div:hover .submenu {
+    display: flex;
 }
+
 
 html {
     scroll-behavior: smooth;
