@@ -168,9 +168,12 @@ th, td {
     padding: 5px 0;
     top: 0;
     line-height: 1;
-}
+     display: flex;  /* Use flexbox to easily control child elements */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: flex-start;  /* Align children at the top */
+    align-items: center;  /* Center 
+}align horizontally */}
 .bottom-right, .bottom-right_2 {
-    font-size: 1.95em;
     color: #fafafa;
     line-height: 1;
     padding: 0 10px;
@@ -179,30 +182,40 @@ th, td {
     bottom: 0;
     right: 0;
     text-shadow: 0 0 6px #000;
-     bottom: 18%;
-          font-size: clamp(24px, 2.5vw, 45.45454545454546px);
+}
+
+.bottom-right{
+    bottom: 18%;
+    font-size: clamp(35px, 2.5vw, 50.45454545454546px);
 }
 .bottom-right_2 {
      bottom: 2%;
-     font-size: clamp(24px, 2vw, 36.36363636363637px);
+     font-size: clamp(26px, 2vw, 26.0000px);
 }
+
+
 
 /* Conference Title Logo */
-.title1 {
+.title2 {
      bottom: 18%;
     font-weight: 400;
-    font-size: clamp(10px, 4.5vw, 81.81818181818183px);
+    font-size: clamp(28px, 5.5vw, 100px);
     color: #fafafa;
     text-shadow: 1px 1px 3px #c0c0c0;
+    position: absolute;
+    display: flex;
+
 }
 
-.title2 {
+.title1 {
   bottom: 18%;
     font-weight: 400;
         text-shadow: 1px 1px 3px #c0c0c0;
-    font-size: clamp(24px, 5.5vw, 100px);
+     font-size: clamp(10px, 4.5vw, 81.81818181818183px);
     color: #fafafa;
 }
+
+
 
 .year {
     color: #505050;
@@ -219,7 +232,7 @@ th, td {
     align-items: center;
     gap: 1.0em;
     padding: 1.0em;
-    font-size: 1.5em;
+    font-size:  2.5rem;;
     background-color: #f8f8f8;
     border-radius: 0px;
     max-width: 100%;
