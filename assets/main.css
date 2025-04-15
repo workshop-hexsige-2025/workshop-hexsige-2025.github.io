@@ -42,7 +42,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 20px;
+    gap: auto;
     width: 100%;
 }
 
@@ -52,6 +52,8 @@ body {
     font-size: 1.2em;
     text-align: center;
     justify-content: space-around;
+     margin-bottom: 30px; 
+     margin-top: 40px;
 }
 
 .small-text {
@@ -193,10 +195,12 @@ li {
 .bottom-right{
     bottom: 18%;
     font-size: clamp(35px, 2.5vw, 50.45454545454546px);
+     position: absolute;
 }
 .bottom-right_2 {
      bottom: 2%;
-     font-size: clamp(26px, 2vw, 26.0000px);
+     font-size: clamp(30px, 2vw, 35.00px);
+      position: absolute;
 }
 
 
@@ -356,10 +360,10 @@ table.plenary {
 
 .form-container {
     background: transparent;
-    padding: 20px;
-    border-radius: 10px;
+    padding: 10px;
+    border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: clamp(300px, 80vw, 1200px);  /* responsive width */
+    width: 90%;  /* responsive width */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -370,14 +374,25 @@ label {
     font-weight: bold;
 }
 
-input, textarea {
-    width: clamp(300px, 80vw, 1200px);  /* match form container */
+input {
+    width: 100%;  /* match form container */
     padding: 10px;
     margin-top: 5px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 0px;
 }
+
+textarea {
+    padding: 10px; /* Adjusted padding for a comfortable writing space */
+    width: 100%;   /* match form container */
+    height: 200px; /* Makes the textarea large enough for comments */
+    margin-top: 5px;
+    margin-bottom: 5px;     /* Removes margin */
+    border: 1px solid #ccc;
+    border-radius: 0px; /* Keeps border style consistent */
+}
+
 
 button {
     width: 100%;
