@@ -143,8 +143,8 @@ sub {
 }
 
 table {
-    width: 100%;
-    max-width: 1400px;
+    width: 90%;
+    max-width: 1300px;
     margin: 12px auto 24px auto;
 }
 
@@ -212,7 +212,7 @@ th, td {
 
 /* Navigation Table */
 table.navigation {
-    width: 100%;
+    width: 90%;
     border-collapse: collapse;
 }
 td.navigation {
