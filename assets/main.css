@@ -25,10 +25,11 @@ body {
 }
 
 .container {
-    display: flex;
+    display: wrap;
     flex-direction: column;
     gap: 40px;
-    width: 100%;
+    width: 90%;
+    max-width: 1400px;
 }
 
 .keynote {
@@ -151,6 +152,11 @@ table {
 th, td {
     text-align: left;
 }
+
+li {
+    padding-left: 30px; /* Adds space on the left of each list item */
+}
+
 
 /* Website Banner */
 .banner {
