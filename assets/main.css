@@ -17,7 +17,7 @@ body {
     color: #505050;
     text-align: left;
     font-family: 'Roboto Slab', serif;
-    font-size: 1.6em;
+    font-size: 2.0em;
     line-height: 1.5rem;
     margin: 60px auto;
     max-width: 1400px;
@@ -28,7 +28,7 @@ body {
     display: wrap;
     flex-direction: column;
     gap: 40px;
-    width: 90%;
+    width: 100%;
     max-width: 1400px;
 }
 
@@ -104,7 +104,7 @@ h1, h2, h3, h4 {
     text-shadow: 1px 1px 2px #d0d0d0;
 }
 h1 { font-size: 2.67rem; }
-h2 { font-size: 2rem; }
+h2 { font-size: 3.00rem; }
 h3 { font-size: 1.67rem; }
 h4 { font-size: 1.33rem; }
 
@@ -194,12 +194,12 @@ li {
 
 .bottom-right{
     bottom: 18%;
-    font-size: clamp(35px, 2.5vw, 50.45454545454546px);
+    font-size: clamp(10.0px, 2.5vw, 35px);
      position: absolute;
 }
 .bottom-right_2 {
      bottom: 2%;
-     font-size: clamp(30px, 2vw, 35.00px);
+     font-size: clamp(10.0px, 2vw, 28px);
       position: absolute;
 }
 
@@ -209,7 +209,7 @@ li {
 .title2 {
      bottom: 18%;
     font-weight: 400;
-    font-size: clamp(28px, 5.5vw, 100px);
+    font-size: clamp(0.0px, 5.5vw,  100px);
     color: #fafafa;
     text-shadow: 1px 1px 3px #c0c0c0;
     position: absolute;
@@ -218,11 +218,13 @@ li {
 }
 
 .title1 {
-  bottom: 18%;
+  bottom: 78%;
     font-weight: 400;
         text-shadow: 1px 1px 3px #c0c0c0;
-     font-size: clamp(10px, 4.5vw, 81.81818181818183px);
+    font-size: clamp(0.0px, 3.0vw,  80px);
     color: #fafafa;
+    position: absolute;
+    display: flex;
 }
 
 
@@ -431,33 +433,23 @@ iframe.directions {
 }
 img.center{display:block; width:67%; margin:1em auto 2em auto;}
 
-/* Responsive: mobile screens */
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     body {
         font-size: 1.2em;
-        margin: 20px;
+        margin: 20px auto;
+        padding: 10px;
     }
 
-    h1 { font-size: 2em; }
-    h2 { font-size: 1.5em; }
-    h3 { font-size: 1.2em; }
-    h4 { font-size: 1em; }
-
-    td.navigation {
-        font-size: 1.2em;
-        padding: 10px 20px;
+    .container {
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        padding: 0 10px;
     }
 
-    .top-left {
-        font-size: 2.5em;
-        position: relative;
-    }
-
-    .bottom-right, .bottom-right_2 {
-        font-size: 1.2em;
-        position: static;
-        text-align: center;
-        margin-top: 10px;
+    .keynote {
+        font-size: 1em;
+        line-height: 1.2;
     }
 
     .speakers {
@@ -465,10 +457,30 @@ img.center{display:block; width:67%; margin:1em auto 2em auto;}
         align-items: center;
     }
 
-    td.date {
-        text-align: left;
+    .speaker {
+        width: 100%;
+        max-width: 100%;
+        font-size: 1em;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-align: center;
     }
 
+    .small-text {
+        font-size: 0.8em;
+        line-height: 1.3;
+    }
+
+    .img_2 {
+        width: 50px;
+        height: 50px;
+        margin-top: 10px;
+    }
+
+    h1, h2, h3, h4 {
+        font-size: 1.3em;
+        margin: 1em 0 0.5em;
+    }
 }
 
 
