@@ -433,7 +433,7 @@ iframe.directions {
 }
 img.center{display:block; width:67%; margin:1em auto 2em auto;}
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 600px) {
     body {
         font-size: 1.2em;
         margin: 20px auto;
