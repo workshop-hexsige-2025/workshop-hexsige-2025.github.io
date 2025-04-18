@@ -17,11 +17,11 @@ body {
     color: #505050;
     text-align: left;
     font-family: 'Roboto Slab', serif;
-    font-size: 2.0em;
+    font-size: 1.5em;
     line-height: 1.5rem;
     margin: 60px auto;
-    max-width: 1400px;
-    width: 90%;
+    max-width: 1200px;
+    width: 86%;
 }
 
 .container {
@@ -29,7 +29,7 @@ body {
     flex-direction: column;
     gap: 40px;
     width: 100%;
-    max-width: 1400px;
+    max-width: 1200px;
 }
 
 .keynote {
@@ -104,15 +104,15 @@ h1, h2, h3, h4 {
     text-shadow: 1px 1px 2px #d0d0d0;
 }
 h1 { font-size: 2.67rem; }
-h2 { font-size: 3.00rem; }
+h2 { font-size: 2.00rem; }
 h3 { font-size: 1.67rem; }
 h4 { font-size: 1.33rem; }
 
 p, ul {
-    margin: 24px auto;
+    margin: 20px auto;
     padding: 0;
     width: 100%;
-    max-width: 1300px;
+    max-width: 1150px;
     line-height: 1.5;
 }
 p {
@@ -147,7 +147,7 @@ sub {
 
 table {
     width: 90%;
-    max-width: 1300px;
+    max-width: 1100px;
     margin: 12px auto 24px auto;
 }
 
@@ -244,7 +244,7 @@ li {
     align-items: center;
     gap: 1.0em;
     padding: 1.0em;
-    font-size:  2.5rem;;
+    font-size:  2.0rem;;
     background-color: #f8f8f8;
     border-radius: 0px;
     max-width: 100%;
@@ -420,7 +420,7 @@ footer {
 
 
 /* Registration and Directions iframes and Images */
-iframe.registration{display:block; margin:1em auto 2em auto; width:700px; height:1400px; border:none;}
+iframe.registration{display:block; margin:1em auto 2em auto; width:700px; height:1200px; border:none;}
 /* Directions iframe */
 /* Directions iframe */
 iframe.directions {
@@ -435,7 +435,7 @@ img.center{display:block; width:67%; margin:1em auto 2em auto;}
 
 @media only screen and (max-width: 600px) {
     body {
-        font-size: 1.2em;
+        font-size: 1.0em;
         margin: 20px auto;
         padding: 10px;
     }
@@ -478,7 +478,7 @@ img.center{display:block; width:67%; margin:1em auto 2em auto;}
     }
 
     h1, h2, h3, h4 {
-        font-size: 1.3em;
+        font-size: 1.0em;
         margin: 1em 0 0.5em;
     }
 }
