@@ -720,12 +720,8 @@ iframe.directions {
     }
  
  iframe.directions {
-    display: block;
-    margin: 1em auto;  /* Centers the iframe horizontally */
-    width: 100%;  /* Makes the iframe responsive */
     max-width: 300px;  /* Sets a maximum width */
     height: 150px;  /* Sets a reasonable height */
-    border: none;  /* Removes the default border */
 }
  
 }
